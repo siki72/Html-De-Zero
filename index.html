@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tuto Html de zéro</title>
+    <meta
+      name="description"
+      content="un cours pour apprendre le Html en partant de zéro"
+    />
+    <meta name="author" content="Code clair" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>lundi</li>
+          <li>mardi</li>
+          <li>mercredi</li>
+          <li>jeudi</li>
+          <li>vendredi</li>
+          <li>samedi</li>
+          <li>dimanche</li>
+        </ul>
+        <ol type="A">
+          <li>lundi</li>
+          <li>mardi</li>
+          <li>mercredi</li>
+          <li>jeudi</li>
+          <li>vendredi</li>
+          <li>samedi</li>
+          <li>dimanche</li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <h1>Apprendre le Html pas à pas</h1>
+      <section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h3>Lorem, ipsum dolor.</h3>
+        <h4>Lorem, ipsum dolor.</h4>
+        <h5>Lorem, ipsum dolor.</h5>
+        <h6 class="h6">Lorem, ipsum dolor.</h6>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Enim aspernatur <br />
+          illo repellat modi beatae. <br />
+          Quia, ipsa voluptate saepe molestiae fugiat perferendis.
+          <strong>Delectus</strong> , dolores quam eos magni consequuntur
+          corporis <mark>tenetur</mark> temporibus?
+        </p>
+      </section>
+      <section>
+        <h3 id="h3" class="black">Lorem ipsum dolor sit amet consectetur.</h3>
+        <p id="paragraphe" class="black">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+          cumque odio nemo odit eum harum, consequuntur repellendus mollitia
+          adipisci iusto laborum et, repudiandae temporibus dolorum blanditiis
+          illo, cum atque quae! Iure natus numquam eius repudiandae. Ut,
+          reprehenderit deserunt doloremque explicabo accusamus esse iure beatae
+          accusantium illum quos ad, a iste.
+        </p>
+      </section>
+
+      <!--les attributs -->
+      <div>
+        <a
+          id="myLinkYoutube"
+          class="link"
+          title="lien youtube"
+          href="https://www.youtube.com"
+          target="_blank"
+          >Lien vers youtube</a
+        >
+        <img
+          draggable="false"
+          width="300"
+          height="250"
+          src="https://sport.onisep.fr/var/onisep/storage/images/_aliases/dso_grid_12_columns/media/multimedia/galeries-photos/onisep-sport/metiers-de-la-fabrication/31265112-1-fre-FR/Metiers-de-la-fabrication.jpg"
+          alt="ballon de basket"
+        />
+      </div>
+      <!-- Formulaires -->
+      <form autocomplete="false">
+        <label for="name">Name</label>
+        <input type="text" placeholder="name" id="name" />
+
+        <input type="checkbox" id="homme" name="homme" checked />
+        <label for="homme">Homme</label>
+        <input type="checkbox" id="femme" name="femme" />
+        <label for="femme">femme</label>
+
+        <input type="date" name="date" id="date" />
+        <input type="email" name="email" />
+        <input type="file" />
+        <input type="number" value="75" min="10" max="80" />
+        <input
+          type="password"
+          placeholder="password"
+          minlength="4"
+          maxlength="10"
+        />
+        <input type="month" />
+        <div>
+          <input type="radio" name="age" value="18" id="18" />
+          <label for="18">18 ans</label>
+          <input type="radio" name="age" value="25" id="25" checked />
+          <label for="25">25 ans</label>
+          <input type="radio" name="age" value="50" id="50" />
+          <label for="50">50 ans</label>
+        </div>
+        <input type="search" placeholder="recherche" name="recherche" />
+        <input type="reset" value="effacer" />
+        <input type="range" min="10" max="100" value="90" step="2" />
+        <input
+          type="datetime-local"
+          value="2023-08-10T10:00"
+          min="2023-08-09T00:00"
+        />
+        <label for="couleur">Votre couleur</label>
+
+        <select name="couleur" id="couleur">
+          <option value="select" selected>
+            Votre couleur du jour est le ?
+          </option>
+          <option value="Rouge">Rouge</option>
+          <option value="Noir">Noir</option>
+          <option value="Jaune">Jaune</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <input
+          type="text"
+          placeholder="test"
+          id="myId"
+          class="myClass"
+          autofocus
+          autocomplete="false"
+        />
+        <input type="submit" value="send" />
+      </form>
+
+      <!--Tableaux en Html-->
+      <h2>Les tableaux</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>prénom</th>
+            <th>age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>durand</td>
+            <td>cyril</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>durand</td>
+            <td>cécile</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--Block & inline-->
+      <!--block-->
+      <div class="parent">
+        <div class="enfant">
+          <h1>Elements en display : Block</h1>
+          <h2>h2 : display block</h2>
+          <h3>h3 : display block</h3>
+          <h4>h4 : display block</h4>
+          <h5>h5 : display block</h5>
+          <h6>h6 : display block</h6>
+          <address>adress est également en display block</address>
+          <article>articile est en block</article>
+          <aside>aside</aside>
+          <blockquote>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et beatae
+            officiis maiores autem!
+          </blockquote>
+          <div>div</div>
+          <table>
+            table
+          </table>
+          <main>main</main>
+          <form>form</form>
+          <ul>
+            ul
+          </ul>
+          <ol>
+            ol
+          </ol>
+          <p>p</p>
+          <section>section</section>
+          <footer>footer</footer>
+          <header>header</header>
+          <nav>nav</nav>
+          <li>li</li>
+        </div>
+        <!--inline-->
+        <span>span</span>
+        <a href="">lien</a>
+        <strong>strong</strong>
+        <em>em</em>
+        <small>small</small>
+        <i>icon</i>
+        <code>une ligne html</code>
+        <input type="text" />
+        <textarea name="" id="" cols="10" rows="10"></textarea>
+        <div>
+          <button>je suis un boutton</button>
+        </div>
+      </div>
+      <iframe
+        width="300"
+        height="300"
+        title="Le mans centre"
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8416.3820320255!2d0.19981234151422125!3d48.00216926849402!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1691666429613!5m2!1sfr!2sfr"
+        frameborder="4"
+      ></iframe>
+      <canvas
+        id="myCanvas"
+        width="300"
+        height="200"
+        style="border: 1px solid red"
+      >
+      </canvas>
+      <svg
+        viewBox="0 0 100 100"
+        width="45"
+        style="border: 2px solid rgb(39, 157, 216)"
+      >
+        <rect width="80" height="10" fill="black" x="10" y="30"></rect>
+        <rect width="80" height="10" fill="red" x="10" y="50"></rect>
+        <rect width="80" height="10" fill="blue" x="10" y="70"></rect>
+      </svg>
+      <video
+        loop
+        muted
+        src="./sea_-_33194 (1080p).mp4"
+        width="400"
+        height="200"
+        controls
+      ></video>
+      <iframe
+        width="400"
+        height="200"
+        src="https://www.youtube.com/embed/pR4uLG8CJyY"
+        title="NORMAN - LES MARIAGES 💍"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <audio controls>
+        <source src="./sea_-_33194 (1080p).mp4" type="audio/ogg" />
+      </audio>
+    </main>
+
+    <style>
+      .parent {
+        /*    background-color: black;
+        height: 400px; */
+      }
+      .enfant {
+        /*   background-color: brown;
+        max-width: 60%; */
+      }
+      table {
+        border: 2px solid black;
+      }
+      thead {
+        background-color: black;
+      }
+      th {
+        color: white;
+        border: 1px solid red;
+        padding: 4px;
+      }
+      td {
+        border: 1px solid green;
+      }
+    </style>
+  </body>
+</html>
